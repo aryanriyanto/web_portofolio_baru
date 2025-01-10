@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo-pic">
+        <a href="./index.html">
+          <img src="assets/logo nama.png" alt="Logo" />
+        </a>
+      </div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#Certificate">Certificate</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">
+        <a href="./index.html">Aryan Rianto</a></div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/1.png" alt="John Doe profile picture" />
+      </div>
+      <div class="section__text">
+        <img src="./assets/hello nama.png" class="about-pic"/>
+
+        <h1 class="title"></h1>
+        <p class="section__text__p2">Data Science|Data Analyst</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/ARYAN RIANTO.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon_link"
+            onclick="location.href='https://linkedin.com/in/aryan-rianto'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon_link "
+            onclick="location.href='https://github.com/aryanriyanto'"
+          />
+          <img
+          src="./assets/Instagram.svg"
+          alt="My Instagram profile"
+          class="icon_link"
+          onclick="location.href='https://www.instagram.com/aryanry_'"
+          />
+          <img
+          src="./assets/icons8-whatsapp-90.png"
+          alt="My WhatsApp profile"
+          class="icon_link"
+          onclick="location.href='https://wa.me/62882000510863'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/Black and White Modern Portfolio Presentation Template.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>1+ years <br/>Data Scientist - BISA AI (PT BISA ARTIFISIAL INDONESIA) 
+                <br> Data Analyst - RevoU (PT Revolusi Cita Edukasi)</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Bachelor of Engineering<br />Widyatama University</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              I am an Informatics Engineering student at Widyatama University with expertise in databases focusing on Data Science, Data Analyst, and Data Engineer. I also have experience in frontend website development and design, including UI/UX, logos, posters, and more.<br>
+              I have participated in the Certified Internship and Independent Study Program (MSIB) twice: Batch 6 at RevoU Tech Academy focusing on Learn Data Analytics & Software Development with AI and Batch 7 at BISA AI Academy focusing on Data Science. <br>
+              I am committed to developing analytical and technological skills to provide innovative solutions.
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Database Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Python</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Anaconda Node JS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Power BI</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>SQL</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Google Colab</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Tableau</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>ML, AI, DP</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3> Microsoft Office Suite</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>LookerStudio</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Other Skills</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Experienced</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Express JS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Laravel</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CodeIgnister</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Bootstrap</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>TailwindCSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Figma & Canva</h3>
+                  <p>Intermediate</p>
+                </div>
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/banjir project 1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <p2>MSIB Batch 7 - BISA AI (Data Science)</p2>
+            <h4>PREDICTION AND CLASSIFICATION OF FLOOD AREAS IN BANDUNG DISTRICT</h4>
+            <p2>This research focuses on implementing the Random Forest algorithm to predict and classify flood areas in Bandung Regency, West Java.</p2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/aryanriyanto/RandomForest_Prediksi_Banjir_Di_Kabupaten_Bandung/blob/main/Prediksi_Banjir_Menggunakan_Random_Forest.ipynb'"
+              >
+                Github
+              </button>
+              <button
+              class="btn btn-color-2 project-btn"
+              onclick="window.open('./assets/project 1 banjir.pdf')"
+            >
+              live demo
+            </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/pizza.png"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <p2>MSIB batch 6 - RevoU (Data Analytics & Software Development with AI)</p2>
+            <h4>ANALYSIS OF PIZZA SALES</h4>
+            <p2>This project explores data analytics techniques to analyze pizza sales patterns and trends, leveraging AI to enhance business insights.</p2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/aryanriyanto/visualisasi-data-Power-BI'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://msib-kelompok-uhod.vercel.app/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div>
+          
+          
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+
+    <section id="Certificate" class="certificate-section">
+      <p class="section__text__p1">Obtaining Several</p>
+      <h1 class="title">Certificate</h1>
+      <div class="experience-details-container">
+        <div class="about-sertif">
+          <div class="article-sertif">
+            <img
+              src="./assets/BISA AI MSIB 7/BISA 1.png"
+              alt="Certificate BISA AI 1/4"
+              class="sertif-img"
+              onclick="openModal(this)"
+              />
+          </div>
+          <div class="article-container">
+            <img
+              src="./assets/BISA AI MSIB 7/BISA 2.png"
+              alt="Certificate BISA AI 2/4"
+              class="sertif-img"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="article-container">
+            <img
+              src="./assets/BISA AI MSIB 7/BISA 3.png"
+              alt="Certificate BISA AI 3/4"
+              class="sertif-img"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="article-container">
+            <img
+              src="./assets/BISA AI MSIB 7/BISA 4.png"
+              alt="Certificate BISA AI 4/4"
+              class="sertif-img"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="article-container">
+            <img
+              src="./assets/BISA AI MSIB 7/Sertifikat Penyellesaian BISA AI.png"
+              alt="Certificate BISA AI Course Completion"
+              class="sertif-img"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="article-container">
+            <img
+              src="./assets/BISA AI MSIB 7/Sertifikat MSIB 7.png"
+              alt="Certificate BISA AI MSIB Escaped"
+              class="sertif-img"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="article-container">
+            <img
+              src="./assets/BISA AI MSIB 7/sertifikat lolos BISA AI.jpg"
+              alt="Certificate BISA AI Escaped Selection"
+              class="sertif-img"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="article-container">
+            <img
+              src="./assets/BISA AI MSIB 7/Sertifikat Internasional CertNexus.png"
+              alt="Certificate Internasional CertNexus"
+              class="sertif-img"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="article-container">
+            <img
+              src="./assets/RevoU MSIB 7/sertifikat MSIB 6.png"
+              alt="Certificate RevoU Escaped Selection"
+              class="sertif-img"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="article-container">
+            <img
+              src="./assets/RevoU MSIB 7/Sertifikat Revou1.png"
+              alt="Certificate RevoU 1/3"
+              class="sertif-img"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="article-container">
+            <img
+              src="./assets/RevoU MSIB 7/Sertifikat Revou2.png"
+              alt="Certificate RevoU 2/3"
+              class="sertif-img"
+              onclick="openModal(this)"
+            />
+          </div>
+          <div class="article-container">
+            <img
+              src="./assets/RevoU MSIB 7/Sertifikat Revou2.png"
+              alt="Certificate RevoU 3/3"
+              class="sertif-img"
+              onclick="openModal(this)"
+            />
+          </div>
+        </div>
+            <div class="details-ser">
+                <button
+                  class="btn btn-color-2 project-btn"
+                  onclick="location.href='https://drive.google.com/drive/folders/16GkXSknzVwbmgYCZiTWQAr3vaZTRRA3z?usp=sharing'"
+                >
+                  Certificate Course
+                </button>
+                <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://drive.google.com/drive/folders/1vPaCGZffD0Ukh_qvBhYmM6eno-k8uqYj?usp=sharing'"
+                >
+                Certificate Webinar
+              </button>
+            </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+      <div id="imgModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg" />
+        <div id="caption"></div>
+      </div>
+    </section>
+    
+
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:aryanrianto5@gmail.com">aryanrianto5@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/aryan-rianto/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#Certificate">Certificate</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p> Aryan Rianto &#169; 2025 - Informatics Engineering.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
