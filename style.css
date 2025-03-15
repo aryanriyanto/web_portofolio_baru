@@ -585,3 +585,247 @@ footer p {
 .next {
   right: 10px;
 }
+
+/* Add this to your existing CSS file */
+
+/* Fade-in animation for sections */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button hover effect */
+.btn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ff5722; /* Change to your desired hover color */
+  transform: scale(1.05);
+}
+
+/* Social icons hover effect */
+.icon_link {
+  transition: transform 0.3s ease;
+}
+
+.icon_link:hover {
+  transform: scale(1.1);
+}
+
+/* Image modal animation */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  animation: fadeIn 0.5s;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  animation: zoomIn 0.5s;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Arrow icon animation */
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow:hover {
+  transform: translateY(-5px);
+}/* Add this to your existing CSS file */
+
+/* Fade-in animation for sections */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.5s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Button hover effect */
+.btn {
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+  background-color:rgb(84, 84, 84); /* Change to your desired hover color */
+  transform: scale(1.05);
+}
+
+/* Social icons hover effect */
+.icon_link {
+  transition: transform 0.3s ease;
+}
+
+.icon_link:hover {
+  transform: scale(1.1);
+}
+
+/* Image modal animation */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.8);
+  animation: fadeIn 0.5s;
+}
+
+.modal-content {
+  margin: auto;
+  display: block;
+  max-width: 80%;
+  animation: zoomIn 0.5s;
+}
+
+@keyframes zoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Arrow icon animation */
+.arrow {
+  transition: transform 0.3s ease;
+}
+
+.arrow:hover {
+  transform: translateY(-5px);
+}
+
+.experience-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Space between groups */
+}
+
+.experience-group {
+  background-color: var(--background-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-sub-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.experience-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem; /* Space between skill cards */
+}
+
+.skill-card {
+  background-color: var(--button-bg-color);
+  color: var(--text-color);
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: default; /* Change cursor to indicate non-clickable */
+}
+
+.skill-card:hover {
+  background-color: var(--button-hover-bg-color);
+  transform: translateY(-2px);
+}
+
+.experience-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem; /* Space between groups */
+}
+
+.experience-group {
+  background-color: var(--background-color);
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.experience-sub-title {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: var(--text-color);
+}
+
+.experience-skills {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Responsive grid */
+  gap: 1rem; /* Space between skill cards */
+}
+
+.skill-card {
+  display: flex;
+  flex-direction: column; /* Stack skill name and level */
+  justify-content: space-between; /* Space between skill name and level */
+  background-color: var(--button-bg-color);
+  color: var(--text-color);
+  padding: 0.75rem 1rem;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  cursor: default; /* Change cursor to indicate non-clickable */
+  text-align: center; /* Center text in skill cards */
+  height: 100px; /* Set a fixed height for uniformity */
+}
+
+.skill-name {
+  margin-bottom: auto; /* Push the level label to the bottom */
+}
+
+.level {
+  display: inline-block; /* Make level label inline-block */
+  font-size: 0.8rem; /* Smaller font size for level */
+  color: #fff; /* White color for better contrast */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+  border-radius: 3px; /* Rounded corners */
+  padding: 2px 5px; /* Padding for the label */
+}
+
+.skill-card:hover {
+  background-color: var(--button-hover-bg-color);
+  transform: translateY(-2px);
+}
