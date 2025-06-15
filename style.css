@@ -9,6 +9,7 @@
 
 body {
   font-family: "Poppins", sans-serif;
+  
 }
 
 html {
@@ -363,6 +364,7 @@ section {
 
 #experience {
   position: relative;
+  height: 100%;
 }
 
 .experience-sub-title {
@@ -372,11 +374,7 @@ section {
   margin-bottom: 2rem;
 }
 
-.experience-details-container {
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-}
+
 
 .article-container {
   display: flex;
@@ -415,10 +413,6 @@ article .icon {
   height: 90%;
 }
 
-.project-title {
-  margin: 1rem;
-  color: black;
-}
 
 .project-btn {
   color: black;
@@ -660,12 +654,6 @@ footer p {
   transform: translateY(-5px);
 }/* Add this to your existing CSS file */
 
-/* Fade-in animation for sections */
-.fade-in {
-  opacity: 0;
-  transform: translateY(20px);
-  animation: fadeIn 0.5s forwards;
-}
 
 @keyframes fadeIn {
   to {
@@ -745,11 +733,6 @@ footer p {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.experience-sub-title {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: var(--text-color);
-}
 
 .experience-skills {
   display: flex;
@@ -757,26 +740,6 @@ footer p {
   gap: 1rem; /* Space between skill cards */
 }
 
-.skill-card {
-  background-color: var(--button-bg-color);
-  color: var(--text-color);
-  padding: 0.75rem 1rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  transition: background-color 0.3s ease, transform 0.3s ease;
-  cursor: default; /* Change cursor to indicate non-clickable */
-}
-
-.skill-card:hover {
-  background-color: var(--button-hover-bg-color);
-  transform: translateY(-2px);
-}
-
-.experience-details-container {
-  display: flex;
-  flex-direction: column;
-  gap: 2rem; /* Space between groups */
-}
 
 .experience-group {
   background-color: var(--background-color);
@@ -785,47 +748,101 @@ footer p {
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-.experience-sub-title {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: var(--text-color);
-}
 
 .experience-skills {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); /* Responsive grid */
   gap: 1rem; /* Space between skill cards */
 }
-
 .skill-card {
   display: flex;
   flex-direction: column; /* Stack skill name and level */
   justify-content: space-between; /* Space between skill name and level */
-  background-color: var(--button-bg-color);
-  color: var(--text-color);
-  padding: 0.75rem 1rem;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: rgba(255, 255, 255, 0.1); /* Light background with transparency */
+  color: #ffffff; /* White text for better contrast */
+  padding: 1rem; /* Increased padding for a more spacious feel */
+  border-radius: 10px; /* More rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Deeper shadow for a floating effect */
   transition: background-color 0.3s ease, transform 0.3s ease;
   cursor: default; /* Change cursor to indicate non-clickable */
   text-align: center; /* Center text in skill cards */
-  height: 100px; /* Set a fixed height for uniformity */
-}
-
-.skill-name {
-  margin-bottom: auto; /* Push the level label to the bottom */
-}
-
-.level {
-  display: inline-block; /* Make level label inline-block */
-  font-size: 0.8rem; /* Smaller font size for level */
-  color: #fff; /* White color for better contrast */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  border-radius: 3px; /* Rounded corners */
-  padding: 2px 5px; /* Padding for the label */
+  height: 120px; /* Increased height for better layout */
+  margin: 10px; /* Add margin for spacing between cards */
 }
 
 .skill-card:hover {
-  background-color: var(--button-hover-bg-color);
-  transform: translateY(-2px);
+  background-color: rgba(255, 255, 255, 0.2); /* Darker background on hover */
+  transform: translateY(-2px); /* Slight lift effect on hover */
+}
+
+.skill-name {
+  font-size: 1rem; /* Slightly larger font size */
+  font-weight: 700; /* Bolder font weight for emphasis */
+  color:rgb(0, 0, 0); /* White text for better contrast */
+  margin-bottom: 5px; /* Space between skill name and level */
+  display: flex; /* Flexbox for icon alignment */
+}
+
+.skill-name i {
+  margin-right: 5px; /* Space between icon and text */
+  font-size: 1.2rem; /* Slightly larger icon size */
+  color:rgb(0, 0, 0); /* Icon color for better visibility */
+}
+
+
+
+.level {
+  display: inline-block;
+  font-size: 0.80rem;
+  font-family: open-sans, sans-serif;
+  color: #ffffff;
+  background: rgba(30, 30, 30, 0.6);
+  padding: 4px 5px;
+  border-radius: 9999px; /* Pill shape */
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+
+}
+
+.level:hover,
+.level:focus {
+  background: rgba(55, 55, 55, 0.8);
+  color: #e0e0e0;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.8);
+}
+
+
+.section__text__p1 {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-bottom: 0.5rem;
+}
+
+
+/* Grid & Skill Cards */
+.experience-skills.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+}
+
+
+
+/* Arrow Icon */
+.icon.arrow {
+  display: block;
+  margin: 40px auto 0;
+  width: 40px;
+  cursor: pointer;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
 }
