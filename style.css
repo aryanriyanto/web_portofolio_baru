@@ -354,11 +354,6 @@ section {
   height: 80%;
 }
 
-.section__pic-container {
-  height: 400px;
-  width: 400px;
-  margin: auto 0;
-}
 
 /* EXPERIENCE SECTION */
 
@@ -845,4 +840,136 @@ footer p {
   50% {
     transform: translateY(-10px);
   }
+}
+
+/* Container untuk semua ikon sosial */
+#socials-container {
+  display: flex;
+  justify-content: center;  /* Atur posisi tengah secara horizontal */
+  gap: 20px;                /* Jarak antar ikon */
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+/* Gaya dasar untuk ikon */
+.icon_link {
+  font-size: 32px; /* Ukuran ikon */
+  color: #333;     /* Warna default */
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+/* Hover effect untuk interaktif */
+.icon_link:hover {
+  transform: scale(1.2);
+  color: #0077b5; /* Warna LinkedIn default, bisa diubah per icon */
+}
+
+/* Warna khusus untuk tiap platform (jika ingin lebih spesifik) */
+[aria-label="LinkedIn"] .icon_link {
+  color: #0077b5;
+}
+[aria-label="GitHub"] .icon_link {
+  color: #333;
+}
+[aria-label="Instagram"] .icon_link {
+  color: #e4405f;
+}
+[aria-label="WhatsApp"] .icon_link {
+  color: #25D366;
+}
+
+/* Hover state khusus */
+[aria-label="LinkedIn"] .icon_link:hover {
+  color: #005582;
+}
+[aria-label="GitHub"] .icon_link:hover {
+  color: #000;
+}
+[aria-label="Instagram"] .icon_link:hover {
+  color: #c13584;
+}
+[aria-label="WhatsApp"] .icon_link:hover {
+  color: #128C7E;
+}
+
+
+.project-navbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+  justify-content: center;
+}
+
+.filter-btn {
+  padding: 8px 14px;
+  border: none;
+  background-color: #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.filter-btn.active,
+.filter-btn:hover {
+  background-color:  rgb(85, 85, 85);
+  color: white;
+}
+
+.project-card {
+  display: none;
+}
+
+.project-card.show {
+  display: block;
+}
+
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+form button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+.status {
+  display: none;
+  margin-top: 10px;
+}
+
+.loading,
+.error-message,
+.sent-message {
+  display: none;
+  font-size: 14px;
+  padding: 8px;
+}
+
+.loading {
+  color: #007BFF;
+}
+
+.error-message {
+  color: #dc3545;
+}
+
+.sent-message {
+  color: #28a745;
 }
