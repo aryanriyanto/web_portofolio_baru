@@ -1,24 +1,475 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo-pic">
-        <a href="./index.html">
-          <img src="assets/logo nama.png" alt="Logo" />
+<head>
+
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="mediaqueries.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo-pic">
+      <a href="./index.html">
+        <img src="assets/logo nama.png" alt="Logo" />
+      </a>
+    </div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#Certificate">Certificate</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+
+    </div>
+  </nav>
+  <nav id="hamburger-nav">
+    <div class="logo">
+      <a href="./index.html">Aryan Rianto</a>
+    </div>
+    <div class="hamburger-menu">
+      <div class="hamburger-icon" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="menu-links">
+        <li><a href="#about" onclick="toggleMenu()">About</a></li>
+        <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+        <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+        <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+      </div>
+    </div>
+  </nav>
+  <section id="profile">
+    <div class="section__pic-container">
+      <img src="./assets/aryan.png" alt="Aryan Rianto" />
+    </div>
+    <div class="section__text">
+      <h1 class="section__text__p2">Hello I'm</h1>
+      <h1 class="title section__text">Aryan Rianto</h1>
+      <p class="section__text__p2">Data Science|Data Analyst</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/CVARYAN.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <a href="https://linkedin.com/in/aryan-rianto" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin icon_link"></i>
+        </a>
+        <a href="https://github.com/aryanriyanto" target="_blank" aria-label="GitHub">
+          <i class="fab fa-github icon_link"></i>
+        </a>
+        <a href="https://www.instagram.com/aryanry_" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram icon_link"></i>
+        </a>
+        <a href="https://wa.me/62882000510863" target="_blank" aria-label="WhatsApp">
+          <i class="fab fa-whatsapp icon_link"></i>
         </a>
       </div>
-      <div>
+    </div>
+  </section>
+  <section id="about" class="fade-in">
+    <p class="section__text__p1">Get To Know More</p>
+    <h1 class="title">About Me</h1>
+    <div class="section-container">
+      <div class="section__pic-container">
+        <img src="./assets/Cokelat dan Hitam Antik Estetik Kolase Foto (1).png" alt="Profile picture"
+          class="about-pic" />
+      </div>
+      <div class="about-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <img src="./assets/experience.png" alt="Experience icon" class="icon" />
+            <h3>Experience</h3>
+            <p>1+ years <br />Data Scientist - BISA AI (PT BISA ARTIFISIAL INDONESIA)
+              <br> Data Analyst - RevoU (PT Revolusi Cita Edukasi)
+            </p>
+          </div>
+          <div class="details-container">
+            <img src="./assets/education.png" alt="Education icon" class="icon" />
+            <h3>Education</h3>
+            <p>Bachelor of Engineering<br />Widyatama University</p>
+          </div>
+        </div>
+        <div class="text-container">
+          <p>
+            I am an Informatics Engineering student at Widyatama University with expertise in databases focusing on Data
+            Science, Data Analyst, and Data Engineer. I also have experience in frontend website development and design,
+            including UI/UX, logos, posters, and more.<br>
+            I have participated in the Certified Internship and Independent Study Program (MSIB) twice: Batch 6 at RevoU
+            Tech Academy focusing on Learn Data Analytics & Software Development with AI and Batch 7 at BISA AI Academy
+            focusing on Data Science. <br>
+            I am committed to developing analytical and technological skills to provide innovative solutions.
+          </p>
+        </div>
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#experience'" />
+  </section>
+
+  <section id="experience" class="fade-in">
+    <p class="section__text__p1">Explore My</p>
+    <h1 class="title">Skills</h1>
+
+    <div class="experience-details-container">
+
+      <!-- Data Science & Analytics Section -->
+      <div class="experience-group">
+        <img src="assets/skill.png" alt="" class="project-img">
+
+      </div>
+
+      <div class="about-containers"></div>
+
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
+  </section>
+
+
+  <section id="projects" class="fade-in">
+    <p class="section__text__p1">Browse My Recent</p>
+    <p class="section__text__p1">
+      Visualization, Machine Learning, Deep Learning, and making Website designs, Mobile applications, logos and
+      Banners.
+    </p>
+    <div class="project-navbar">
+      <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+      <button class="filter-btn" onclick="filterProjects('ml')">Machine Learning & Deep Learning Project</button>
+      <button class="filter-btn" onclick="filterProjects('data')">Data Analyst Project</button>
+      <button class="filter-btn" onclick="filterProjects('design')">UI/UX and Design Project</button>
+    </div>
+
+    <h1 class="title">Projects</h1>
+    <div class="experience-details-container-projects">
+      <div class="about-containers-projects">
+  
+        <!-- Project One: ML -->
+<div class="details-container-projects color-container project-card ml">
+  <div class="article-container">
+    <img src="./assets/flood-AI-climate-change.jpg" alt="Project 1" class="project-img" />
+  </div>
+  <h2 class="experience-sub-title project-title">Project One</h2>
+  <p2>MSIB Batch 7 - BISA AI (Data Science)</p2>
+  <h4>Prediction and Classification of Flood Areas in Bandung District</h4>
+  <p2>This research focuses on implementing the Random Forest algorithm to predict and classify flood areas in Bandung Regency, West Java.</p2>
+  <div class="btn-container-projects">
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aryanriyanto/RandomForest_Prediksi_Banjir_Di_Kabupaten_Bandung/blob/main/Prediksi_Banjir_Menggunakan_Random_Forest.ipynb'">Github</button>
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@aryanrianto5/prediction-and-classification-of-flood-areas-in-bandung-district-indonesia-05369ae13951'">Live Demo</button>
+  </div>
+</div>
+
+<!-- Project Two: ML -->
+<div class="details-container-projects color-container project-card ml">
+  <div class="article-container">
+    <img src="./assets/tumor2.jpg" alt="Project 2" class="project-img" />
+  </div>
+  <h2 class="experience-sub-title project-title">Project Two</h2>
+  <p2>Independent Project</p2>
+  <h4>Deep Learning-based Tumor Detection using CNN</h4>
+  <p2>Using Convolutional Neural Network (CNN) for tumor image classification in medical datasets.</p2>
+  <div class="btn-container-projects">
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aryanriyanto/Detection-Tumor/blob/main/Deteksi_tumor_(CNN).ipynb'">Github</button>
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@aryanrianto5/deep-learning-based-tumor-detection-using-convolutional-neural-network-cnn-fff50a29df5c'">Live Demo</button>
+  </div>
+</div>
+
+<!-- Project Three: ML -->
+<div class="details-container-projects color-container project-card ml">
+  <div class="article-container">
+    <img src="./assets/cover-artikel-pilpres-2024-1_169.jpeg" alt="Project 3" class="project-img" />
+  </div>
+  <h2 class="experience-sub-title project-title">Project Three</h2>
+  <p2>Independent Project</p2>
+  <h4>Sentiment Analysis of Presidential Candidate Indonesia</h4>
+  <p2>This project explores data analysis techniques to perform sentiment analysis of Presidential Candidate Indonesia.</p2>
+  <div class="btn-container-projects">
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aryanriyanto/Sentimen-Analyst-Presidential-Candidate-Indonesia/blob/main/Analisis_Sentimen.ipynb'">Github</button>
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@aryanrianto5/sentiment-analysis-presidential-candidate-indonesia-64b921e317a7'">Live Demo</button>
+  </div>
+</div>
+
+<!-- Project Four: Data -->
+<div class="details-container-projects color-container project-card data">
+  <div class="article-container">
+    <img src="./assets/pizza.png" alt="Project 4" class="project-img" />
+  </div>
+  <h2 class="experience-sub-title project-title">Project Four</h2>
+  <p2>MSIB Batch 6 - RevoU (Data Analytics & Software Development)</p2>
+  <h4>Analysis of Pizza Sales</h4>
+  <p2>Clustering analysis using K-Means, Elbow Method, and visualization with Python & Power BI.</p2>
+  <div class="btn-container-projects">
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aryanriyanto/visualisasi-data-Power-BI'">Github</button>
+    <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/Visualisasi_Data_Pizza.pdf')">Live Demo</button>
+  </div>
+</div>
+
+<!-- Project Five: (No Category) -->
+<div class="details-container-projects color-container project-card ml">
+  <div class="article-container">
+    <img src="./assets/BCA.png" alt="Project 5" class="project-img" />
+  </div>
+  <h2 class="experience-sub-title project-title">Project Five</h2>
+  <p2>Independent Project</p2>
+  <h4>Data Analysis on BBCA JK (BCA Stock)</h4>
+  <p2>Stock analysis from 2020 to 2024 using Looker Studio.</p2>
+  <div class="btn-container-projects">
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://lookerstudio.google.com/reporting/abfe5071-7c5b-42da-b10a-c77d7767eede'">LookerStudio</button>
+    <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/Data_analysis_on_BBCA_JK_or_shares_of_PT._Bank_Central_Asia.pdf')">Live Demo</button>
+  </div>
+</div>
+
+<!-- Project Six: Data -->
+<div class="details-container-projects color-container project-card data">
+  <div class="article-container">
+    <img src="./assets/phk.png" alt="Project 6" class="project-img" />
+  </div>
+  <h2 class="experience-sub-title project-title">Project Six</h2>
+  <p2>Independent Project</p2>
+  <h4>Cleaning and EDA Layoffs</h4>
+  <p2>A project focused on data cleaning and exploratory analysis using SQL.</p2>
+  <div class="btn-container-projects">
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aryanriyanto/data-Layoffs-Cleaning-and-EDA-with-SQL'">Github</button>
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@aryanrianto5/cleaning-data-and-eda-data-layoffs-with-sql-32652546aa63'">Live Demo</button>
+  </div>
+</div>
+
+<!-- Project Seven: Data -->
+<div class="details-container-projects color-container project-card data">
+  <div class="article-container">
+    <img src="./assets/adidas1.jpg" alt="Project 7" class="project-img" />
+  </div>
+  <h2 class="experience-sub-title project-title">Project Seven</h2>
+  <p2>Independent Project</p2>
+  <h4>Exploratory Data Analysis Adidas Sales Product</h4>
+  <p2>EDA and visualization using Python for business intelligence insights.</p2>
+  <div class="btn-container-projects">
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aryanriyanto/EDA-Adidas/blob/main/EDA_Adidas.ipynb'">Github</button>
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@aryanrianto5/exploratory-data-analysis-adidas-sales-python-81b25ca205ef'">Live Demo</button>
+  </div>
+</div>
+
+<!-- Project Eight: ML -->
+<div class="details-container-projects color-container project-card ml">
+  <div class="article-container">
+    <img src="./assets/shopee image.png" alt="Project 8" class="project-img" />
+  </div>
+  <h2 class="experience-sub-title project-title">Project Eight</h2>
+  <p2>Independent Project</p2>
+  <h4>Clustering K-Means on Shopee App</h4>
+  <p2>Clustering analysis using K-Means and Elbow Method with Python.</p2>
+  <div class="btn-container-projects">
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aryanriyanto/Shopee/blob/main/Clustering_K_Means_Pada_Apk_Shopee.ipynb'">Github</button>
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@aryanrianto5/clustering-k-means-and-elbow-method-for-application-shopee-6d70ffd08885'">Live Demo</button>
+  </div>
+</div>
+
+<!-- Project Nine: ML -->
+<div class="details-container-projects color-container project-card ml">
+  <div class="article-container">
+    <img src="./assets/BRI.png" alt="Project 9" class="project-img" />
+  </div>
+  <h2 class="experience-sub-title project-title">Project Nine</h2>
+  <p2>Independent Project</p2>
+  <h4>Forecasting BBRI Stock with RNN</h4>
+  <p2>Stock price prediction using Recurrent Neural Network (RNN).</p2>
+  <div class="btn-container-projects">
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aryanriyanto/Forecasting-BBRI-stock-with-RNN/blob/main/Forecasting_BBRI_stock_with_RNN.ipynb'">Github</button>
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@aryanrianto5/forecasting-bbri-stock-with-rnn-59b17814da9f'">Live Demo</button>
+  </div>
+</div>
+
+<!-- Project Ten: Data -->
+<div class="details-container-projects color-container project-card data">
+  <div class="article-container">
+    <img src="./assets/Blinkit-Enters-Hyperlocal-social.png" alt="Project 10" class="project-img" />
+  </div>
+  <h2 class="experience-sub-title project-title">Project Ten</h2>
+  <p2>Independent Project</p2>
+  <h4>Dashboard Supermarket Blinkit</h4>
+  <p2>Sales dashboard using Power BI for Blinkit Supermarket.</p2>
+  <div class="btn-container-projects">
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aryanriyanto/dashboard_blinkit_Power-BI/blob/main/dashboard%20Supermarket%20Blinkit.pbit'">Power BI</button>
+    <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/dashboard_Blinkit.pdf')">Live Demo</button>
+  </div>
+</div>
+
+<!-- Project Eleven: Design -->
+<div class="details-container-projects color-container project-card design">
+  <div class="article-container">
+    <img src="./assets/Merah Modern Profesional Spanduk Promosi Jajanan Bakso Bakar Banner.png" alt="Project 11" class="project-img" />
+  </div>
+  <h2 class="experience-sub-title project-title">Project Eleven</h2>
+  <p2>Independent Project</p2>
+  <h4>UI/UX Mobile App for Bakso Mang Ato</h4>
+  <p2>Designing logo, banner (Canva), and UI Mobile App (Figma) for ordering Bakso.</p2>
+  <div class="btn-container-projects">
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/design/yUmXGbLc2VFvKMk36z8bkC/Project-Mobile-Aplikasi-Order?node-id=0-1&m=dev&t=3TZXzyatULIJOBrV-1'">Figma</button>
+    <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/ri8bzcn_eSs'">Live Demo</button>
+  </div>
+</div>
+
+  
+  
+  
+      </div>
+    </div>
+    <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+  </section>
+
+  <section id="Certificate" class="certificate-section fade-in">
+    <p class="section__text__p1">Obtaining Several</p>
+    <h1 class="title">Certificate</h1>
+    <div class="experience-details-container">
+      <div class="about-sertif">
+        <div class="article-sertif">
+          <img src="./assets/BISA AI MSIB 7/BISA 1.png" alt="Certificate BISA AI 1/4" class="sertif-img"
+            onclick="openModal(this)" />
+        </div>
+        <div class="article-container">
+          <img src="./assets/BISA AI MSIB 7/BISA 2.png" alt="Certificate BISA AI 2/4" class="sertif-img"
+            onclick="openModal(this)" />
+        </div>
+        <div class="article-container">
+          <img src="./assets/BISA AI MSIB 7/BISA 3.png" alt="Certificate BISA AI 3/4" class="sertif-img"
+            onclick="openModal(this)" />
+        </div>
+        <div class="article-container">
+          <img src="./assets/BISA AI MSIB 7/BISA 4.png" alt="Certificate BISA AI 4/4" class="sertif-img"
+            onclick="openModal(this)" />
+        </div>
+        <div class="article-container">
+          <img src="./assets/BISA AI MSIB 7/Sertifikat Penyellesaian BISA AI.png"
+            alt="Certificate BISA AI Course Completion" class="sertif-img" onclick="openModal(this)" />
+        </div>
+        <div class="article-container">
+          <img src="./assets/BISA AI MSIB 7/Sertifikat MSIB 7.png" alt="Certificate BISA AI MSIB Escaped"
+            class="sertif-img" onclick="openModal(this)" />
+        </div>
+        <div class="article-container">
+          <img src="./assets/BISA AI MSIB 7/sertifikat lolos BISA AI.jpg" alt="Certificate BISA AI Escaped Selection"
+            class="sertif-img" onclick="openModal(this)" />
+        </div>
+        <div class="article-container">
+          <img src="./assets/BISA AI MSIB 7/Sertifikat Internasional CertNexus.png"
+            alt="Certificate Internasional CertNexus" class="sertif-img" onclick="openModal(this)" />
+        </div>
+        <div class="article-container">
+          <img src="./assets/RevoU MSIB 7/sertifikat MSIB 6.png" alt="Certificate RevoU Escaped Selection"
+            class="sertif-img" onclick="openModal(this)" />
+        </div>
+        <div class="article-container">
+          <img src="./assets/RevoU MSIB 7/Sertifikat Revou1.png" alt="Certificate RevoU 1/3" class="sertif-img"
+            onclick="openModal(this)" />
+        </div>
+        <div class="article-container">
+          <img src="./assets/RevoU MSIB 7/Sertifikat Revou2.png" alt="Certificate RevoU 2/3" class="sertif-img"
+            onclick="openModal(this)" />
+        </div>
+        <div class="article-container">
+          <img src="./assets/Sertifikat Data Analytics Aryan Rianto.png" alt="Certificate Data Analyst"
+            class="sertif-img" onclick="openModal(this)" />
+        </div>
+      </div>
+      <div class="details-ser">
+        <button class="btn btn-color-2 project-btn"
+          onclick="location.href='https://drive.google.com/drive/folders/16GkXSknzVwbmgYCZiTWQAr3vaZTRRA3z?usp=sharing'">
+          Certificate Course
+        </button>
+        <button class="btn btn-color-2 project-btn"
+          onclick="location.href='https://drive.google.com/drive/folders/1vPaCGZffD0Ukh_qvBhYmM6eno-k8uqYj?usp=sharing'">
+          Certificate Webinar
+        </button>
+      </div>
+      <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#contact'" />
+      <div id="imgModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImg" />
+        <div id="caption"></div>
+      </div>
+  </section>
+
+
+  <section id="contact" class="fade-in">
+    <p class="section__text__p1">Get in Touch</p>
+    <h1 class="title">Contact Me</h1>
+
+    <div class="container section-title">
+      <h2>Contact</h2>
+      <p>Feel free to send a message for any collaboration or inquiry.</p>
+    </div>
+
+    <div class="container">
+      <div class="row">
+
+        <div class="col">
+          <div class="info-item">
+            <i class="icon">📍</i>
+            <div>
+              <h3>Address</h3>
+              <p>Bandung City</p>
+            </div>
+          </div>
+          <div class="info-item">
+            <i class="icon">✉️</i>
+            <div>
+              <h3>Email</h3>
+              <p>aryanrianto5@gmail.com</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col">
+<!-- modify this form HTML and place wherever you want your form -->
+<form
+  action="https://formspree.io/f/xgvzodbl"
+  method="POST"
+>
+  <label>
+    Your email:
+    <input type="email" name="email">
+  </label>
+  <label>
+    Your message:
+    <textarea name="message"></textarea>
+  </label>
+  <!-- your other form fields go here -->
+  <button type="submit">Send</button>
+</form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+    <div class="contact-info-upper-container">
+      <div class="contact-info-container">
+        <img src="./assets/email.png" alt="Email icon" class="icon contact-icon email-icon" />
+        <p><a href="mailto:aryanrianto5@gmail.com">aryanrianto5@gmail.com</a></p>
+      </div>
+      <div class="contact-info-container">
+        <a href="https://linkedin.com/in/aryan-rianto" target="_blank" aria-label="LinkedIn">
+          <i class="fab fa-linkedin icon_link"></i>
+        </a>
+        <p><a href="https://www.linkedin.com/in/aryan-rianto/">LinkedIn</a></p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <nav>
+      <div class="nav-links-container">
         <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#experience">Experience</a></li>
@@ -26,501 +477,11 @@
           <li><a href="#Certificate">Certificate</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        
       </div>
     </nav>
-    <nav id="hamburger-nav">
-      <div class="logo">
-        <a href="./index.html">Aryan Rianto</a></div>
-      <div class="hamburger-menu">
-        <div class="hamburger-icon" onclick="toggleMenu()">
-          <span></span>
-          <span></span>
-          <span></span>
-        </div>
-        <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
-        </div>
-      </div>
-    </nav>
-    <section id="profile">
-      <div class="section__pic-container">
-        <img src="./assets/aryan.png" alt="Aryan Rianto" />
-      </div>
-      <div class="section__text">
-        <h1 class="section__text__p2">Hello I'm</h1>
-        <h1 class="title section__text">Aryan Rianto</h1>
-        <p class="section__text__p2">Data Science|Data Analyst</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/CVARYAN.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <a href="https://linkedin.com/in/aryan-rianto" target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin icon_link"></i>
-          </a>
-          <a href="https://github.com/aryanriyanto" target="_blank" aria-label="GitHub">
-            <i class="fab fa-github icon_link"></i>
-          </a>
-          <a href="https://www.instagram.com/aryanry_" target="_blank" aria-label="Instagram">
-            <i class="fab fa-instagram icon_link"></i>
-          </a>
-          <a href="https://wa.me/62882000510863" target="_blank" aria-label="WhatsApp">
-            <i class="fab fa-whatsapp icon_link"></i>
-          </a>
-        </div>
-      </div>
-    </section>
-    <section id="about" class="fade-in">
-      <p class="section__text__p1">Get To Know More</p>
-      <h1 class="title">About Me</h1>
-      <div class="section-container">
-        <div class="section__pic-container">
-          <img
-            src="./assets/Cokelat dan Hitam Antik Estetik Kolase Foto (1).png"
-            alt="Profile picture"
-            class="about-pic"
-          />
-        </div>
-        <div class="about-details-container">
-          <div class="about-containers">
-            <div class="details-container">
-              <img
-                src="./assets/experience.png"
-                alt="Experience icon"
-                class="icon"
-              />
-              <h3>Experience</h3>
-              <p>1+ years <br/>Data Scientist - BISA AI (PT BISA ARTIFISIAL INDONESIA) 
-                <br> Data Analyst - RevoU (PT Revolusi Cita Edukasi)</p>
-            </div>
-            <div class="details-container">
-              <img
-                src="./assets/education.png"
-                alt="Education icon"
-                class="icon"
-              />
-              <h3>Education</h3>
-              <p>Bachelor of Engineering<br />Widyatama University</p>
-            </div>
-          </div>
-          <div class="text-container">
-            <p>
-              I am an Informatics Engineering student at Widyatama University with expertise in databases focusing on Data Science, Data Analyst, and Data Engineer. I also have experience in frontend website development and design, including UI/UX, logos, posters, and more.<br>
-              I have participated in the Certified Internship and Independent Study Program (MSIB) twice: Batch 6 at RevoU Tech Academy focusing on Learn Data Analytics & Software Development with AI and Batch 7 at BISA AI Academy focusing on Data Science. <br>
-              I am committed to developing analytical and technological skills to provide innovative solutions.
-            </p>
-          </div>
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#experience'"
-      />
-    </section>
-    
-    <section id="experience" class="fade-in">
-  <p class="section__text__p1">Explore My</p>
-  <h1 class="title">Skills</h1>
+    <p> Aryan Rianto &#169; 2025 - Informatics Engineering.</p>
+  </footer>
+  <script src="script.js"></script>
+</body>
 
-  <div class="experience-details-container">
-
-<!-- Data Science & Analytics Section -->
-<div class="experience-group">
-  <img src="assets/skill.png" alt="" class="project-img">
-
-</div>
-
-<div class="about-containers"></div>
-
-  <img src="./assets/arrow.png" alt="Arrow icon" class="icon arrow" onclick="location.href='./#projects'" />
-</section>
-
-    
-    <section id="projects" class="fade-in">
-      <p class="section__text__p1">Browse My Recent</p>
-      <p class="section__text__p1">some of the projects made are projects about Data Science, Data Analyst, Data Visualization, Machine Learning, Deep Learning, and making Website designs, Mobile applications, logos and Banners.</p>
-
-      <h1 class="title">Projects</h1>
-      <div class="experience-details-container-projects">
-        <div class="about-containers-projects">
-          
-          <!-- Project 1 -->
-          <div class="details-container-projects color-container">
-            <div class="article-container">
-              <img src="./assets/flood-AI-climate-change.jpg" alt="Project 1" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Project One</h2>
-
-            <p2>MSIB Batch 7 - BISA AI (Data Science)</p2>
-            <h4>Prediction and Clasification of Flood Areas in Bandung District</h4>
-            <p2>This research focuses on implementing the Random Forest algorithm to predict and classify flood areas in Bandung Regency, West Java.</p2>
-            <div class="btn-container-projects">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aryanriyanto/RandomForest_Prediksi_Banjir_Di_Kabupaten_Bandung/blob/main/Prediksi_Banjir_Menggunakan_Random_Forest.ipynb'">
-                Github
-              </button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@aryanrianto5/prediction-and-classification-of-flood-areas-in-bandung-district-indonesia-05369ae13951'">
-                Live Demo
-              </button>
-            </div>
-          </div>
-            <!-- Project 2 -->
-            <div class="details-container-projects color-container">
-              <div class="article-container">
-                <img src="./assets/tumor2.jpg" alt="Project 6" class="project-img" />
-              </div>
-              <h2 class="experience-sub-title project-title">Project Two</h2>
-              <p2>Independent Project</p2>
-              <h4>Deep Learning-based tumor Detection using Convolutional neural network (CNN)</h4>
-              <p2>Utilizing logistic regression and decision tree to predict customer churn for an e-commerce platform.</p2>
-              <div class="btn-container-projects">
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aryanriyanto/Detection-Tumor/blob/main/Deteksi_tumor_(CNN).ipynb'">
-                  Github
-                </button>
-                <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@aryanrianto5/deep-learning-based-tumor-detection-using-convolutional-neural-network-cnn-fff50a29df5c'">
-                  Live Demo
-                </button>
-              </div>
-            </div>
-          <!-- Project 3 -->
-          <div class="details-container-projects color-container">
-            <div class="article-container">
-              <img src="./assets/cover-artikel-pilpres-2024-1_169.jpeg" alt="Project 2" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Three</h2>
-            <p2>Independent Project</p2>
-            <h4>Sentiment Analysis Presidential Candidate Indonesia</h4>
-            <p2>This project explores data analysis techniques to perform sentiment analysis of Presidential Candidate Indonesia.</p2>
-            <div class="btn-container-projects">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aryanriyanto/Sentimen-Analyst-Presidential-Candidate-Indonesia/blob/main/Analisis_Sentimen.ipynb'">
-                Github
-              </button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@aryanrianto5/sentiment-analysis-presidential-candidate-indonesia-64b921e317a7'">
-                Live Demo
-              </button>
-            </div>
-          </div>
-    
-          <!-- Project 4 -->
-          <div class="details-container-projects color-container">
-            <div class="article-container">
-              <img src="./assets/pizza.png" alt="Project 3" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Four</h2>
-            <p2>MSIB batch 6 - RevoU (Data Analytics & Software Development)</p2>
-            <h4>Analysis of Pizza Sales</h4>
-            <p2>This analysis performs clustering using K-Means and Elbow Method, data visualization using Python and PowerBI.</p2>
-            <div class="btn-container-projects">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aryanriyanto/visualisasi-data-Power-BI'">
-                Github
-              </button>
-              <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/Visualisasi_Data_Pizza.pdf')">
-                Live Demo
-              </button>
-            </div>
-          </div>
-            <!-- Project 5 -->
-          <div class="details-container-projects color-container">
-            <div class="article-container">
-              <img src="./assets/BCA.png" alt="Project 5" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Five</h2>
-            <p2>Independent Project</p2>
-            <h4>Data analysis on BBCA JK or shares of PT. Bank Central Asia</h4>
-            <p2>conducted an analysis on BCA stock data from 2020 to 2024 using LookerStudio.</p2>
-            <div class="btn-container-projects">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://lookerstudio.google.com/reporting/abfe5071-7c5b-42da-b10a-c77d7767eede'">
-                LookerStudio
-              </button>
-              <button class="btn btn-color-2 project-btn" onclick="window.open('./assets/Data_analysis_on_BBCA_JK_or_shares_of_PT._Bank_Central_Asia.pdf')">
-                Live Demo
-              </button>
-            </div>
-          </div>
-          <!-- Project 6 -->
-          <div class="details-container-projects color-container">
-            <div class="article-container">
-              <img src="./assets/phk.png" alt="Project 4" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Six</h2>
-            <p2>Independent Project</p2>
-            <h4>Cleaning and Exploratory Data Analysis Layoffs</h4>
-            <p2>A project that focuses on cleaning data and EDA Using SQL</p2>
-            <div class="btn-container-projects">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aryanriyanto/data-Layoffs-Cleaning-and-EDA-with-SQL'">
-                Github
-              </button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@aryanrianto5/cleaning-data-and-eda-data-layoffs-with-sql-32652546aa63'">
-                Live Demo
-              </button>
-            </div>
-          </div>
-
-          <!-- Project 7 -->
-          <div class="details-container-projects color-container">
-            <div class="article-container">
-              <img src="./assets/adidas1.jpg" alt="Project 4" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Seven</h2>
-            <p2>Independent Project</p2>
-            <h4>Exploratory Data Analysis Adidas Sales Product with Python</h4>
-            <p2>A project that focuses on data visualization for business intelligence using EDA Python.</p2>
-            <div class="btn-container-projects">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aryanriyanto/EDA-Adidas/blob/main/EDA_Adidas.ipynb'">
-                Github
-              </button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@aryanrianto5/exploratory-data-analysis-adidas-sales-python-81b25ca205ef'">
-                Live Demo
-              </button>
-            </div>
-          </div>
-          
-                    <!-- Project 8 -->
-          <div class="details-container-projects color-container">
-            <div class="article-container">
-              <img src="./assets/shopee image.png" alt="Project 4" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Eight</h2>
-            <p2>Independent Project</p2>
-            <h4>Clustering K_Means and Elbow Method for Application Shopee</h4>
-            <p2>A project that focuses on Cluster and data visualization for business intelligence using Python.</p2>
-            <div class="btn-container-projects">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aryanriyanto/Shopee/blob/main/Clustering_K_Means_Pada_Apk_Shopee.ipynb'">
-                Github
-              </button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@aryanrianto5/clustering-k-means-and-elbow-method-for-application-shopee-6d70ffd08885'">
-                Live Demo
-              </button>
-            </div>
-          </div>
-
-                    <!-- Project 6 -->
-          <div class="details-container-projects color-container">
-            <div class="article-container">
-              <img src="./assets/BRI.png" alt="Project 4" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Project nine</h2>
-            <p2>Independent Project</p2>
-            <h4>Forecasting BBRI stock with RNN</h4>
-            <p2>stock price prediction using Recurrent Neural Networks (RNN) for BBRI (Bank Rakyat Indonesia) stock.</p2>
-            <div class="btn-container-projects">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://github.com/aryanriyanto/Forecasting-BBRI-stock-with-RNN/blob/main/Forecasting_BBRI_stock_with_RNN.ipynb'">
-                Github
-              </button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://medium.com/@aryanrianto5/forecasting-bbri-stock-with-rnn-59b17814da9f'">
-                Live Demo
-              </button>
-            </div>
-          </div>
-
-          <!-- Project 8 -->
-          <div class="details-container-projects color-container">
-            <div class="article-container">
-              <img src="./assets/Merah Modern Profesional Spanduk Promosi Jajanan Bakso Bakar Banner.png" alt="Project 4" class="project-img" />
-            </div>
-            <h2 class="experience-sub-title project-title">Project Ten</h2>
-            <p2>Independent Project</p2>
-            <h4>UI/UX Mobile application for purchasing BAKSO MANG ATO</h4>
-            <p2>A project that focuses on logo and Banner using Canva, Desain UI Mobile Application using Figma.</p2>
-            <div class="btn-container-projects">
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://www.figma.com/design/yUmXGbLc2VFvKMk36z8bkC/Project-Mobile-Aplikasi-Order?node-id=0-1&m=dev&t=3TZXzyatULIJOBrV-1'">
-                Figma
-              </button>
-              <button class="btn btn-color-2 project-btn" onclick="location.href='https://youtu.be/ri8bzcn_eSs'">
-                Live Demo
-              </button>
-            </div>
-          </div>
-
-
-
-        </div>
-      </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-    </section>
-
-    <section id="Certificate" class="certificate-section fade-in">
-      <p class="section__text__p1">Obtaining Several</p>
-      <h1 class="title">Certificate</h1>
-      <div class="experience-details-container">
-        <div class="about-sertif">
-          <div class="article-sertif">
-            <img
-              src="./assets/BISA AI MSIB 7/BISA 1.png"
-              alt="Certificate BISA AI 1/4"
-              class="sertif-img"
-              onclick="openModal(this)"
-              />
-          </div>
-          <div class="article-container">
-            <img
-              src="./assets/BISA AI MSIB 7/BISA 2.png"
-              alt="Certificate BISA AI 2/4"
-              class="sertif-img"
-              onclick="openModal(this)"
-            />
-          </div>
-          <div class="article-container">
-            <img
-              src="./assets/BISA AI MSIB 7/BISA 3.png"
-              alt="Certificate BISA AI 3/4"
-              class="sertif-img"
-              onclick="openModal(this)"
-            />
-          </div>
-          <div class="article-container">
-            <img
-              src="./assets/BISA AI MSIB 7/BISA 4.png"
-              alt="Certificate BISA AI 4/4"
-              class="sertif-img"
-              onclick="openModal(this)"
-            />
-          </div>
-          <div class="article-container">
-            <img
-              src="./assets/BISA AI MSIB 7/Sertifikat Penyellesaian BISA AI.png"
-              alt="Certificate BISA AI Course Completion"
-              class="sertif-img"
-              onclick="openModal(this)"
-            />
-          </div>
-          <div class="article-container">
-            <img
-              src="./assets/BISA AI MSIB 7/Sertifikat MSIB 7.png"
-              alt="Certificate BISA AI MSIB Escaped"
-              class="sertif-img"
-              onclick="openModal(this)"
-            />
-          </div>
-          <div class="article-container">
-            <img
-              src="./assets/BISA AI MSIB 7/sertifikat lolos BISA AI.jpg"
-              alt="Certificate BISA AI Escaped Selection"
-              class="sertif-img"
-              onclick="openModal(this)"
-            />
-          </div>
-          <div class="article-container">
-            <img
-              src="./assets/BISA AI MSIB 7/Sertifikat Internasional CertNexus.png"
-              alt="Certificate Internasional CertNexus"
-              class="sertif-img"
-              onclick="openModal(this)"
-            />
-          </div>
-          <div class="article-container">
-            <img
-              src="./assets/RevoU MSIB 7/sertifikat MSIB 6.png"
-              alt="Certificate RevoU Escaped Selection"
-              class="sertif-img"
-              onclick="openModal(this)"
-            />
-          </div>
-          <div class="article-container">
-            <img
-              src="./assets/RevoU MSIB 7/Sertifikat Revou1.png"
-              alt="Certificate RevoU 1/3"
-              class="sertif-img"
-              onclick="openModal(this)"
-            />
-          </div>
-          <div class="article-container">
-            <img
-              src="./assets/RevoU MSIB 7/Sertifikat Revou2.png"
-              alt="Certificate RevoU 2/3"
-              class="sertif-img"
-              onclick="openModal(this)"
-            />
-          </div>
-          <div class="article-container">
-            <img
-              src="./assets/Sertifikat Data Analytics Aryan Rianto.png"
-              alt="Certificate Data Analyst"
-              class="sertif-img"
-              onclick="openModal(this)"
-            />
-          </div>
-        </div>
-            <div class="details-ser">
-                <button
-                  class="btn btn-color-2 project-btn"
-                  onclick="location.href='https://drive.google.com/drive/folders/16GkXSknzVwbmgYCZiTWQAr3vaZTRRA3z?usp=sharing'"
-                >
-                  Certificate Course
-                </button>
-                <button
-                class="btn btn-color-2 project-btn"
-                onclick="location.href='https://drive.google.com/drive/folders/1vPaCGZffD0Ukh_qvBhYmM6eno-k8uqYj?usp=sharing'"
-                >
-                Certificate Webinar
-              </button>
-            </div>
-      <img
-        src="./assets/arrow.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#contact'"
-      />
-      <div id="imgModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImg" />
-        <div id="caption"></div>
-      </div>
-    </section>
-    
-
-    <section id="contact" class="fade-in">
-      <p class="section__text__p1">Get in Touch</p>
-      <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p><a href="mailto:aryanrianto5@gmail.com">aryanrianto5@gmail.com</a></p>
-        </div>
-        <div class="contact-info-container">
-          <a href="https://linkedin.com/in/aryan-rianto" target="_blank" aria-label="LinkedIn">
-            <i class="fab fa-linkedin icon_link"></i>
-          </a>
-          <p><a href="https://www.linkedin.com/in/aryan-rianto/">LinkedIn</a></p>
-        </div>
-      </div>
-    </section>
-    
-    <footer>
-      <nav>
-        <div class="nav-links-container">
-          <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#Certificate">Certificate</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-      </nav>
-      <p> Aryan Rianto &#169; 2025 - Informatics Engineering.</p>
-    </footer>
-    <script src="script.js"></script>
-  </body>
 </html>
