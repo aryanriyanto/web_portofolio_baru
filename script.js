@@ -60,3 +60,68 @@ function closeModal() {
   modal.style.display = "none";
 }
 
+function filterProjects(category) {
+  const cards = document.querySelectorAll('.project-card');
+  const buttons = document.querySelectorAll('.filter-btn');
+
+  buttons.forEach(btn => btn.classList.remove('active'));
+
+  // Highlight button based on category
+  buttons.forEach(btn => {
+    if (btn.textContent.toLowerCase().includes(category.replace('_', ' ')) || (category === 'all' && btn.textContent.toLowerCase() === 'all')) {
+      btn.classList.add('active');
+    }
+  });
+
+  cards.forEach(card => {
+    card.classList.remove('show');
+    if (category === 'all' || card.classList.contains(category)) {
+      card.classList.add('show');
+    }
+  });
+}
+
+// Show all projects on first load
+window.addEventListener('DOMContentLoaded', () => {
+  filterProjects('all');
+});
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const form = document.querySelector(".php-email-form");
+  const loading = form.querySelector(".loading");
+  const error = form.querySelector(".error-message");
+  const success = form.querySelector(".sent-message");
+
+  form.addEventListener("submit", async function (e) {
+    e.preventDefault();
+
+    loading.style.display = "block";
+    error.style.display = "none";
+    success.style.display = "none";
+
+    const formData = new FormData(form);
+
+    try {
+      const response = await fetch(form.action, {
+        method: "POST",
+        body: formData,
+      });
+
+      const result = await response.text();
+
+      loading.style.display = "none";
+      if (result.trim() === "OK") {
+        success.style.display = "block";
+        form.reset();
+      } else {
+        error.style.display = "block";
+        error.textContent = result;
+      }
+    } catch (err) {
+      loading.style.display = "none";
+      error.style.display = "block";
+      error.textContent = "Something went wrong. Please try again later.";
+    }
+  });
+});
