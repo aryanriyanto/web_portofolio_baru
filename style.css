@@ -973,3 +973,25 @@ form button:hover {
 .sent-message {
   color: #28a745;
 }
+
+
+/* Media Queries */
+
+/*laptop and desktop*/
+@media (max-width: 1366px) {
+  html {
+    font-size: 75%;
+  }
+}
+/* Tablet */
+@media (max-width: 768px) {
+  html {
+    font-size: 62.5%;
+  }
+}
+/* Mobile */
+@media (max-width: 450px) {
+  html {
+    font-size: 55%;
+  }
+}
